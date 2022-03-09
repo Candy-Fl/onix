@@ -1,0 +1,273 @@
+.info__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 65px;
+  }
+}
+
+.info__item {
+  display: none;
+
+}
+
+.info__item-current {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+.info__description {
+  padding: 0 16px;
+  text-align: center;
+  margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+    width: 397px;
+    text-align: left;
+  }
+}
+
+.info__description-about {
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 35px;
+  color: var(--text-gray);
+  letter-spacing: -0.466667px;
+
+  @media (max-width: 1199px) {
+    letter-spacing: normal;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 53px;
+    margin-bottom: 80px;
+  }
+
+}
+
+.info__description-header {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--light-black);
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 55px;
+    line-height: 90px;
+    margin-top: 15px;
+    letter-spacing: -1.245px;
+    position: relative;
+
+    &::after {
+      content : "";
+      width: 175px;
+      height: 3px;
+      position: absolute;
+      background-color: var(--main-orange);
+      bottom: 0;
+      left: 0;
+      bottom: -20px;
+    }
+  }
+}
+
+.info__rewiews {
+  text-align: center;
+  position: relative;
+  background-size: 320px;
+  height: 415px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 767px;
+    text-align: left;
+    background-size:767px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 430px;
+    height: 596px;
+    margin: 0;
+    margin-left: 100px;
+    background-size: 430px;
+  }
+}
+
+.info__rewiews--greece {
+  background-image: url("/img/greece-mobile.jpg");
+
+  .info__rewiews-user {
+    &::before {
+      background-image: url("/img/avatar-greece.jpg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("/img/rewiews-tablet-greece.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("/img/rewiews-desktop-greece.jpg");
+  }
+}
+
+.info__rewiews--albania {
+  background-image: url("/img/albania-mobile.jpg");
+
+  .info__rewiews-user {
+    &::before {
+      background-image: url("/img/avatar-albania.jpg");
+    }
+  }
+}
+
+.info__rewiews--macedonia {
+  background-image: url("/img/macedonia-mobile.jpg");
+
+  .info__rewiews-user {
+    &::before {
+      background-image: url("/img/avatar-macedonia.jpg");
+    }
+  }
+}
+
+.info__rewiews--montenegro {
+  background-image: url("/img/montenegro-mobile.jpg");
+
+  .info__rewiews-user {
+    &::before {
+      background-image: url("/img/avatar-montenegro.jpg");
+    }
+  }
+}
+
+.info__rewiews--croatia {
+  background-image: url("/img/croatia-mobile.jpg");
+
+  .info__rewiews-user {
+    &::before {
+      background-image: url("/img/avatar-croatia.jpg");
+    }
+  }
+}
+
+.info__rewiews-container {
+  position: absolute;
+  top: 50px;
+  height: 391px;
+  background-color: white;
+  left: 26px;
+  right: 26px;
+  padding:35px 20px;
+  width: 228px;
+
+  @media (min-width: $tablet-width) {
+    width: 322px;
+    left: 193px;
+    padding: 30px;
+    height: 307px;
+    top: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 114px;
+  }
+}
+
+.info__rewiews-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.691667px;
+  margin: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 68px;
+    height: 1px;
+    background-color: var(--main-orange);
+    position: absolute;
+    bottom: -10px;
+    right: 80px;
+
+    @media (min-width:$tablet-width) {
+      right: 0;
+      left: 0;
+      bottom: -20px;
+    }
+  }
+}
+
+.info__rewiews-description {
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: -0.408333px;
+  margin: 0;
+  margin-top: 31px;
+  height: 221px;
+  color: var(--text-gray);
+
+  @media (min-width: $tablet-width) {
+    height: 189px;
+    margin-top: 41px;
+  }
+}
+
+.info__rewiews-user {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.466667px;
+  margin-top: 68px;
+  margin-bottom: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 37px;
+    position: absolute;
+    right: 95px;
+    top: -48px;
+    height: 38px;
+  }
+
+  @media (min-width:$tablet-width) {
+    margin-top: 37px;
+    padding-left: 54px;
+    margin-bottom: 9px;
+
+    &::before {
+      top:-10px;
+      left: 0;
+    }
+  }
+}

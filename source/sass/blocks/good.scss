@@ -1,0 +1,54 @@
+.good {
+  width: 320px;
+  height: 568px;
+  position: fixed;
+  top: 25%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: var(--basic-white);
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 720px;
+    height: 444px;
+  }
+}
+
+.good__close {
+  position: absolute;
+  top:20px;
+  right: 20px;
+  border: none;
+  width: 22px;
+  height: 22px;
+  background-color: var(--basic-white);
+
+  &::before {
+    content: "";
+    background-image: url('/img/toggle-cross.svg');
+    background-repeat: no-repeat;
+    background-color: var(--basic-white);
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    border: none;
+  }
+}
+
+.good__header {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 170%;
+  padding-top: 50%;
+  color: var(--text-black);
+
+  @media (min-width: $tablet-width) {
+    padding: 179px 160px;
+  }
+}

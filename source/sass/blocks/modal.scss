@@ -1,0 +1,101 @@
+.modal__form {
+  width: 320px;
+  height: 568px;
+  position: fixed;
+  top: 25%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: var(--basic-white);
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 720px;
+    height: 444px;
+  }
+}
+
+.modal__image {
+  display: none;
+
+  @media(min-width: $tablet-width) {
+    display: block;
+    position: fixed;
+    width: 334px;
+    height: 444px;
+    background-image: url("/img/modal-ocean.jpg");
+  }
+}
+
+.modal__container {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 386px;
+    margin-left: 335px;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top:20px;
+  right: 20px;
+  border: none;
+  width: 22px;
+  height: 22px;
+  background-color: var(--basic-white);
+
+  &::before {
+    content: "";
+    background-image: url('/img/toggle-cross.svg');
+    background-repeat: no-repeat;
+    background-color: var(--basic-white);
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    border: none;
+  }
+}
+
+.modal__header {
+  margin: 100px 16px;
+  margin-bottom: 50px;
+  font-weight: 600;
+  font-size: 25px;
+  color: var(--text-black);
+  line-height: 170%;
+}
+
+.modal__input {
+  padding: 15px;
+  font-size: 14px;
+  line-height: 17px;
+  width: 254px;
+  margin-bottom: 20px;
+  border: 1px solid var(--light-black-border);
+}
+
+.modal__send {
+  color: var(--basic-white);
+  border: none;
+  background-color: var(--main-orange);
+  padding: 19px 103px;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  width: 288px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    padding-left: 40px;
+    padding-right: 37px;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}

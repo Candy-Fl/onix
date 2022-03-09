@@ -1,0 +1,212 @@
+.places__wrapper {
+  padding: 0 16px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0 auto;
+    width: 710px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1170px;
+  }
+}
+
+.places__header {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0;
+  color: var(--light-black);
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 150%;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    font-size: 55px;
+    line-height: 80px;
+    margin-right: 809px;
+    margin-bottom: 64px;
+    position: relative;
+
+    &::after {
+      content : "";
+      width: 228px;
+      height: 4px;
+      position: absolute;
+      background-color: var(--main-orange);
+      bottom: 0;
+      left: 0;
+      bottom: -30px;
+    }
+  }
+}
+
+.places__description {
+  letter-spacing: -0.466667px;
+  color: var(--text-gray);
+  margin: 0;
+  margin-top: 26px;
+  margin-bottom: 28px;
+  letter-spacing: -0.466667px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 192px;
+    margin-right: 176px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 839px;
+    margin-bottom: 55px;
+  }
+}
+
+
+.places__options-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 616px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1170px;
+  }
+}
+
+.places__options-item {
+  height: 425px;
+  position: relative;
+  background-size: 288px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 288px;
+  margin: 0 auto;
+  margin-top: 35px;
+
+  &:first-child {
+    margin-top: 28px;
+  }
+
+  p {
+    display: none;
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--basic-white);
+    cursor: pointer;
+  }
+
+  span {
+    padding:16px 62px;
+    background-color: var(--basic-white);
+    position: absolute;
+    bottom: 0;
+    left: 36px;
+    right: 36px;
+    width: 91px;
+    z-index: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 41px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+    background-size: 350px;
+    span {
+      left: 65px;
+    }
+
+    &:hover {
+
+      .places__options-link {
+        background-color: var(--hover-black);
+        opacity: 0.6;
+      }
+
+      p {
+        display: block;
+        position: absolute;
+        top: 177px;
+        width: 204px;
+        padding: 25px 30px;
+        border: 1px solid var(--basic-white);
+        left: 42px;
+        z-index: 3;
+      }
+    }
+  }
+}
+
+.places__options-link {
+  display: block;
+  height: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+.places__options-item--greece {
+  background-image: url("/img/greece-mobile.jpg");
+
+  @media (min-width: $desktop-width) {
+    background-image: url("/img/greece-desktop.jpg");
+  }
+}
+
+.places__options-item--albania {
+  background-image: url("/img/albania-mobile.jpg");
+
+  @media (min-width: $desktop-width) {
+    background-image: url("/img/albania-desktop.jpg");
+  }
+}
+
+.places__options-item--macedonia {
+  background-image: url("/img/macedonia-mobile.jpg");
+
+  @media (min-width: $desktop-width) {
+    background-image: url("/img/macedonia-desktop.jpg");
+  }
+}
+
+.places__options-item--montenegro {
+  background-image: url("/img/montenegro-mobile.jpg");
+
+  @media (min-width: $desktop-width) {
+    background-image: url("/img/montenegro-desktop.jpg");
+    margin-left: 175px;
+  }
+}
+
+.places__options-item--croatia {
+  background-image: url("/img/croatia-mobile.jpg");
+
+  @media (min-width: $desktop-width) {
+    background-image: url("/img/croatia-desktop.jpg");
+    margin-right: 172px;
+  }
+}

@@ -1,0 +1,31 @@
+.corporate {
+  margin-top: 30px;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 320px;
+    padding-left: 55px;
+    margin-left: 65px;
+    border-left: 1px solid var(--footer-border);
+  }
+}
+
+.corporate__header {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--basic-black);
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.corporate__description {
+  font-size: 14px;
+  line-height: 170%;
+  color: var(--light-gray);
+}
