@@ -27,7 +27,7 @@
       position: absolute;
       width: 25px;
       height: 25px;
-      background-image: url('/img/icon-tel.svg');
+      background-image: url('./../img/icon-tel.svg');
       background-repeat: no-repeat;
       left: -32px;
     }
@@ -50,15 +50,15 @@
   }
 
   .whatsapp {
-    background-image: url('/img/icon-whatsapp.svg');
+    background-image: url('./../img/icon-whatsapp.svg');
   }
 
   .viber {
-    background-image: url('/img/icon-viber.svg');
+    background-image: url('./../img/icon-viber.svg');
   }
 
   .telegram {
-    background-image: url('/img/icon-tg.svg');
+    background-image: url('./../img/icon-tg.svg');
   }
 
   &__location {
@@ -72,7 +72,7 @@
       width: 30px;
       height: 30px;
       left: 10px;
-      background-image: url('/img/icon-location.svg');
+      background-image: url('./../img/icon-location.svg');
       background-repeat: no-repeat;
       background-size: contain;
     }

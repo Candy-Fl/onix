@@ -21,7 +21,7 @@
   }
 
   &__picture {
-    background-image: url('/img/about-company-background.jpg');
+    background-image: url('./../img/about-company-background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -117,25 +117,25 @@
 
       .service-guaranty {
         &::before {
-          background-image: url("/img/icon-service-garanty.svg");
+          background-image: url("./../img/icon-service-garanty.svg");
         }
       }
 
       .best-price {
         &::before {
-          background-image: url("/img/icon-best-price.svg");
+          background-image: url("./../img/icon-best-price.svg");
         }
       }
 
       .short-date {
         &::before {
-          background-image: url("/img/icon-short-date.svg");
+          background-image: url("./../img/icon-short-date.svg");
         }
       }
 
       .save-materials {
         &::before {
-          background-image: url("/img/icon-save-materials.svg");
+          background-image: url("./../img/icon-save-materials.svg");
         }
       }
 
