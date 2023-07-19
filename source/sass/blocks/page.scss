@@ -1,8 +1,41 @@
 .page__body {
-  font-family: "Montserrat", "arial", sans-serif;
+  font-family: "Inter", "arial", sans-serif;
   margin: 0;
   padding: 0;
   font-size: 16px;
   line-height: 28px;
   background-color: var(--basic-white);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  background-color: var(--basic-white);
+  z-index: 100;
+  width: 100%;
+
+  box-shadow: 0 1px 9px -3px rgb(0 0 0 / 40%);
+}
+
+.section-container {
+  margin: 0 20px;
+
+  @media (min-width: $desktop-width) {
+    // Отступ на высоту шапки
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+
+.block-wrapper {
+  margin-top: 50px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 100px;
+  }
 }

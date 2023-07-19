@@ -3,102 +3,151 @@ const navToggle = document.querySelector('.main-nav__toggle');
 
 navMain.classList.remove('main-nav--nojs');
 
+// Обработка нажатия кнопки навигации
 navToggle.addEventListener('click', function() {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');
+    setEventListenersToNavButtons();
   } else {
     navMain.classList.add('main-nav--closed');
     navMain.classList.remove('main-nav--opened');
   }
 });
 
+function setEventListenersToNavButtons() {
+  const navItems = document.querySelectorAll('.site-list__item');
 
-const placesLinks = document.querySelectorAll(".places__options-link");
-
-placesLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    document.querySelector('.info__item-current').classList.remove('info__item-current');
-    const cuurentItem = document.querySelector(`.info__item--${link.name}`)
-    cuurentItem.classList.add('info__item-current');
-  })
-})
-
-const countriesLinks = document.querySelectorAll(".countries__link");
-
-countriesLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    document.querySelector('.info__item-current').classList.remove('info__item-current');
-    const cuurentItem = document.querySelector(`.info__item--${link.name}`)
-    cuurentItem.classList.add('info__item-current');
-  })
-})
-
-const buyButtons = document.querySelectorAll('.button-buy');
-const modal = document.querySelector('.modal');
-const good = document.querySelector('.good');
-const modalClose = document.querySelector('.modal__close');
-const sendButton = document.querySelector('.modal__send');
-const goodClose = document.querySelector('.good__close');
-console.log(goodClose);
-
-buyButtons.forEach((button) => {
-  button.addEventListener('click', (evt) => {
-    evt.preventDefault();
-    modal.classList.toggle('visually-hidden');
-  })
-})
-
-modalClose.addEventListener('click', () => {
-  modal.classList.toggle('visually-hidden');
-})
-
-goodClose.addEventListener('click', () => {
-  good.classList.toggle('visually-hidden');
-})
-
-
-
-const regex = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
-var re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
-
-function validatePhone(phone){
-  return regex.test(phone);
-}
-
-function validateEmail(email) {
-  return re.test(String(email).toLowerCase());
-}
-
-const contatcsForm = document.querySelector('.contatcs__form');
-const formBuy = modal.querySelector('.modal__form');
-const buyPhone = formBuy.querySelector('.modal__input--tel');
-const buyEmail = formBuy.querySelector('.modal__input--email');
-const contatcsPhone = contatcsForm.querySelector('.contacts__tel');
-const contatcsEmail = contatcsForm.querySelector('.contacts__email');
-
-
-
-function addSubmit (form, tel, email) {
-  form.addEventListener('submit', (evt) => {
-    evt.preventDefault();
-
-    if (validatePhone(tel.value)) {
-      if (validateEmail(email.value)) {
-        form.classList.toggle('visually-hidden');
-        good.classList.toggle('visually-hidden');
+  navItems.forEach(item => {
+    item.addEventListener('click', () => {
+      if (window.innerWidth < 1000) {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
       }
-
-      else {
-        email.classList.add('error');
-      }
-    }
-
-    else {
-      tel.classList.add('error');
-    }
+    })
   })
 }
 
-addSubmit(formBuy,buyPhone,buyEmail);
-addSubmit(contatcsForm,contatcsPhone,contatcsEmail);
+const closetImages = document.querySelectorAll('.closet-image');
+let closetIndex = 0;
+const closetPrevButton = document.getElementById('closet-prev-button');
+const closetNextButton = document.getElementById('closet-next-button');
+
+closetPrevButton.addEventListener('click', () => {
+  if (closetIndex === 0) { return }
+  else {
+    closetIndex -= 1;
+    updateClosetSlider();
+  }
+})
+
+closetNextButton.addEventListener('click', () => {
+  if (closetIndex === closetImages.length - 1) { return }
+  else {
+    closetIndex += 1;
+    updateClosetSlider();
+  }
+})
+
+function updateClosetSlider() {
+  closetImages.forEach((slide, index) => {
+    if (index === closetIndex) {
+      slide.style.display = 'block';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
+}
+
+const ceilingImages = document.querySelectorAll('.ceiling-image');
+let ceilingIndex = 0;
+const ceilingPrevButton = document.getElementById('ceiling-prev-button');
+const ceilingNextButton = document.getElementById('ceiling-next-button');
+
+ceilingPrevButton.addEventListener('click', () => {
+  if (ceilingIndex === 0) { return }
+  else {
+    ceilingIndex -= 1;
+    updateCeilingSlider();
+  }
+})
+
+ceilingNextButton.addEventListener('click', () => {
+  if (ceilingIndex === ceilingImages.length - 1) { return }
+  else {
+    ceilingIndex += 1;
+    updateCeilingSlider();
+  }
+})
+
+function updateCeilingSlider() {
+  ceilingImages.forEach((slide, index) => {
+    if (index === ceilingIndex) {
+      slide.style.display = 'block';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
+}
+
+const windowImages = document.querySelectorAll('.window-image');
+let windowIndex = 0;
+const windowPrevButton = document.getElementById('window-prev-button');
+const windowNextButton = document.getElementById('window-next-button');
+
+windowPrevButton.addEventListener('click', () => {
+  if (windowIndex === 0) { return }
+  else {
+    windowIndex -= 1;
+    updateWindowSlider();
+  }
+})
+
+windowNextButton.addEventListener('click', () => {
+  if (windowIndex === windowImages.length - 1) { return }
+  else {
+    windowIndex += 1;
+    updateWindowSlider();
+  }
+})
+
+function updateWindowSlider() {
+  windowImages.forEach((slide, index) => {
+    if (index === windowIndex) {
+      slide.style.display = 'block';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
+}
+
+const balconyImages = document.querySelectorAll('.balcony-image');
+let balconyIndex = 0;
+const balconyPrevButton = document.getElementById('balcony-prev-button');
+const balconyNextButton = document.getElementById('balcony-next-button');
+
+balconyPrevButton.addEventListener('click', () => {
+  if (balconyIndex === 0) { return }
+  else {
+    balconyIndex -= 1;
+    updateBalconySlider();
+  }
+})
+
+balconyNextButton.addEventListener('click', () => {
+  if (balconyIndex === balconyImages.length - 1) { return }
+  else {
+    balconyIndex += 1;
+    updateBalconySlider();
+  }
+})
+
+function updateBalconySlider() {
+  balconyImages.forEach((slide, index) => {
+    if (index === balconyIndex) {
+      slide.style.display = 'block';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
+}

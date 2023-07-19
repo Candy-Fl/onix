@@ -2,307 +2,347 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Путешествие по Европе</title>
+  <title>Onix42</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico?v=2">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="page__body">
+<body class="page__body" id="body">
 
-<header class="page-header">
-  <nav class="main-nav main-nav--closed main-nav--nojs">
-    <div class="main-nav__wrapper">
-      <a class="main-nav__logo">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg" width="57" height="22">
-          <img src="img/logo-mobile.svg" width="44" height="17" alt="Way»">
-        </picture>
-      </a>
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a href="#places">
-            О путешествии
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="#price">
-            Цены
-          </a>
-        </li>
-        <li class="site-list__item site-list__phone">
-          <a href="tel:+749978468446">+7 (499) -784-684-46</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
-
-<main class="page-main">
-
-  <section class="main-intro">
-    <h1 class="visually-hidden">Путешествие и туры по Европе</h1>
-    <div class="main-intro__wrapper">
-      <div class="main-intro__top-containter">
-        <h1 class="main-intro__header">Путешествие по Европе</h1>
-      </div>
-      <div class="main-intro__bottom-container">
-        <p class="main-intro__description">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
-        <a class="main-intro__button" href="#countries">Смотреть тур</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="places" id="places">
-    <h1 class="visually-hidden">Страны которые вы можете посетить</h1>
-    <div class="places__wrapper">
-      <h1 class="places__header">Места посещения</h1>
-      <p class="places__description">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
-      <ul class="places__options-list">
-        <li class="places__options-item places__options-item--greece">
-          <a class="places__options-link" href="#countries" name="greece"></a>
-          <p>смотреть подробнее</p>
-          <span>Греция</span>
-        </li>
-        <li class="places__options-item places__options-item--albania">
-          <a class="places__options-link" href="#countries" name="albania"></a>
-            <p>смотреть подробнее</p>
-            <span>Албания</span>
-        </li>
-        <li class="places__options-item places__options-item--macedonia">
-          <a class="places__options-link" href="#countries" name="macedonia"></a>
-            <p>смотреть подробнее</p>
-            <span>Македония</span>
-        </li>
-        <li class="places__options-item places__options-item--montenegro">
-          <a class="places__options-link" href="#countries" name="montenegro"></a>
-            <p>смотреть подробнее</p>
-            <span>Черногория</span>
-        </li>
-        <li class="places__options-item places__options-item--croatia">
-          <a class="places__options-link" href="#countries" name="croatia"></a>
-            <p>смотреть подробнее</p>
-            <span>Хорватия</span>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="countries" id="countries">
-    <h1 class="visually-hidden">Подробное описание каждого тура</h1>
-    <div class="countries__wrapper">
-      <ul class="countries__list">
-        <li class="countries__item"><a href="#countries" class="countries__link" name="greece">Греция</a></li>
-        <li class="countries__item"><a href="#countries" class="countries__link" name="albania">Албания</a></li>
-        <li class="countries__item"><a href="#countries" class="countries__link" name="macedonia">Македония</a></li>
-        <li class="countries__item"><a href="#countries" class="countries__link" name="montenegro">Черногория</a></li>
-        <li class="countries__item"><a href="#countries" class="countries__link" name="croatia">Хорватия</a></li>
-      </ul>
-      <ul class="countries__description info__list">
-        <li class="info__item info__item--greece info__item-current">
-          <div class="info__description">
-            <h2 class="info__description-header">Греция</h2>
-            <p class="info__description-about">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. </p>
-            <a class="info__description-link button-buy" href="">купить тур сейчас</a>
-          </div>
-          <div class="info__rewiews info__rewiews--greece">
-            <div class="info__rewiews-container">
-              <h3 class="info__rewiews-header">Отзывы</h3>
-              <p class="info__rewiews-description">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света! </p>
-              <p class="info__rewiews-user">Влада Голицина</p>
-            </div>
-          </div>
-        </li>
-        <li class="info__item info__item--albania">
-          <div class="info__description">
-            <h2 class="info__description-header">Албания</h2>
-            <p class="info__description-about">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.  </p>
-            <a class="info__description-link button-buy" href="">купить тур сейчас</a>
-          </div>
-          <div class="info__rewiews info__rewiews--albania">
-            <div class="info__rewiews-container">
-              <h3 class="info__rewiews-header">Отзывы</h3>
-              <p class="info__rewiews-description">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
-              <p class="info__rewiews-user">Маришка</p>
-            </div>
-          </div>
-        </li>
-        <li class="info__item info__item--macedonia">
-          <div class="info__description">
-            <h2 class="info__description-header">Македония</h2>
-            <p class="info__description-about">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.</p>
-            <a class="info__description-link button-buy" href="">купить тур сейчас</a>
-          </div>
-          <div class="info__rewiews info__rewiews--macedonia">
-            <div class="info__rewiews-container">
-              <h3 class="info__rewiews-header">Отзывы</h3>
-              <p class="info__rewiews-description">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору. </p>
-              <p class="info__rewiews-user">Михаил Кузьмин</p>
-            </div>
-          </div>
-        </li>
-        <li class="info__item info__item--montenegro">
-          <div class="info__description">
-            <h2 class="info__description-header">Черногория</h2>
-            <p class="info__description-about">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.  </p>
-            <a class="info__description-link button-buy" href="">купить тур сейчас</a>
-          </div>
-          <div class="info__rewiews info__rewiews--montenegro">
-            <div class="info__rewiews-container">
-              <h3 class="info__rewiews-header">Отзывы</h3>
-              <p class="info__rewiews-description">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую </p>
-              <p class="info__rewiews-user">Анастасия Мей</p>
-            </div>
-          </div>
-        </li>
-        <li class="info__item info__item--croatia">
-          <div class="info__description">
-            <h2 class="info__description-header">Хорватия</h2>
-            <p class="info__description-about">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет. </p>
-            <a class="info__description-link button-buy" href="">купить тур сейчас</a>
-          </div>
-          <div class="info__rewiews info__rewiews--croatia">
-            <div class="info__rewiews-container">
-              <h3 class="info__rewiews-header">Отзывы</h3>
-              <p class="info__rewiews-description">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :) </p>
-              <p class="info__rewiews-user">Владимир Мулицин</p>
-            </div>
-          </div>
-        </li>
-
-      </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="price" id="price">
-    <h1 class="visually-hidden">Цены на туры</h1>
-    <div class="price__wrapper">
-      <div class="price__info">
-        <h2 class="price__info-header">Цены</h2>
-        <p class="price__info-description">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%! </p>
-        <p class="price__info-contact">Свяжитесь с нами</p>
-        <a class="price__info-tel" href="tel:+749978468446">+7(499)-784-684-46</a>
-      </div>
-      <ul class="price__list">
-        <li class="price__item price__item--complex">
-          <div class="price__item-container">
-            <div class="price__item-top">
-              <h3 class="price__item-header">Комплексный</h3>
-              <p class="price__item-value">$1999</p>
-            </div>
-            <p class="price__item-description">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
-            <ul class="price__advantages-list tariff__list">
-              <li class="tariff__item">Разработанный маршрут с гидом группы</li>
-              <li class="tariff__item">Перелет, трансфер и проживание в отелях</li>
-              <li class="tariff__item">Завтраки, ужины в отелях и ланчи на природе</li>
-              <li class="tariff__item">Экскурсии по удивительно красивым местам Европы</li>
-            </ul>
-          </div>
-          <button class="price__item-buy button-buy">купить тур сейчас</button>
-        </li>
-
-        <li class="price__item price__item--eco">
-          <div class="price__item-container">
-            <div class="price__item-top">
-              <h3 class="price__item-header">Экономный</h3>
-              <p class="price__item-value">$1399</p>
-            </div>
-            <p class="price__item-description">Ознакомьтесь с перечнем того, что входит в данный пакет </p>
-            <ul class="price__advantages-list tariff__list">
-              <li class="tariff__item">Разработанный маршрут с гидом группы</li>
-              <li class="tariff__item">Перелет и трансфер</li>
-              <li class="tariff__item">Проживание в хостелах при отелях</li>
-              <li class="tariff__item">Только завтраки в отелях</li>
-              <li class="tariff__item">Экскурсии по удивительно красивым местам Европы</li>
-            </ul>
-          </div>
-          <button class="price__item-buy button-buy">купить тур сейчас</button>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="contatcs">
-    <h1 class="visually-hidden">Связаться с нами</h1>
-    <div class="contatcs__wrapper">
-      <form class="contatcs__form" method="post" action="https://echo.htmlacademy.ru">
-        <h2 class="contatcs__header">У Вас остались вопросы?</h2>
-        <p class="contatcs__description">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-        <div class="contacts__input-container">
-          <input class="contacts__tel" type="tel" placeholder="+7 Введите 10 цифр номера">
-          <input class="contacts__email" type="email" placeholder="E-mail">
-        </div>
-        <button class="contacts__form-button" type="submit">отправить</button>
-      </form>
-    </div>
-  </section>
-
-</main>
-
-<footer class="page-footer">
-  <h1 class="visually-hidden">Дополнительная информация</h1>
-  <div class="page-footer__wrapper">
-    <ul class="page-footer__list">
-      <li class="page-footer__item next">
-        <h2 class="page-footer__item-header">Следующие путешествия</h2>
-        <ul class="page-footer__next-countries next__list">
-          <div class="next__container">
-            <li class="next__item">Марсель</li>
-            <li class="next__item">Ним</li>
-            <li class="next__item">Монпелье</li>
-            <li class="next__item">Барселона</li>
-            <li class="next__item">Пальма</li>
-          </div>
-          <div class="next__container">
-            <li class="next__item">Сардиния</li>
-            <li class="next__item">Палермо</li>
-            <li class="next__item">Катания</li>
-            <li class="next__item">Неаполь</li>
-            <li class="next__item">Рим</li>
-          </div>
-          <div class="next__container">
-            <li class="next__item">Корс</li>
-            <li class="next__item">Ницца</li>
-            <li class="next__item">Монако</li>
-            <li class="next__item">Динь-ле-Бен</li>
-            <li class="next__item">Гренобль</li>
-          </div>
+  <header class="page-header">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <div class="main-nav__wrapper">
+        <a href="#body" class="main-nav__logo">
+          <picture>
+            <source media="(min-width: 1000px)" srcset="img/logo-desktop.svg" width="147" height="42">
+            <img src="img/logo-desktop.svg" width="150" height="42" alt="Логотип Onix»">
+          </picture>
+        </a>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="#services">
+              Услуги
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#work-examples">
+              Примеры работ
+            </a>
+          <li class="site-list__item">
+            <a href="#about-company">
+              О компании
+            </a>
+          </li>
+          </li>
+          <li class="site-list__item">
+            <a href="#footer">
+              Контакты
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__phone" href="tel:+79236317704">+7 (999) 999 99-99</a>
+          </li>
         </ul>
-      </li>
-      <li class="page-footer__item footer-contacts">
-        <h2 class="footer-contacts__header">Наши контакты</h2>
-        <a class="footer-contacts__email" href="email:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-        <a class="footer-contacts__tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
-      </li>
-      <li class="page-footer__item corporate">
-        <h2 class="corporate__header">Корпоративные путешествия</h2>
-        <p class="corporate__description">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
-      </li>
-    </ul>
-  </div>
-</footer>
+      </div>
+    </nav>
+  </header>
 
-<section class="modal visually-hidden">
-  <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-    <span class="modal__image"></span>
-    <div class="modal__container">
-      <button class="modal__close" type="button"></button>
-      <h2 class="modal__header">Купить тур</h2>
-      <input class="modal__input modal__input--tel" type="tel" placeholder="Введите 10 цифр номера">
-      <input class="modal__input modal__input--email" type="email" placeholder="E-mail">
-      <button class="modal__send" type="submit">отправить</button>
+  <main class="page-main">
+    <section class="main-info section-container">
+      <h1 class="visually-hidden">Профессиональные работы по обустройству вашего дома в Новокузнецке. Установка окон, ремонт окон, остекление балконов, установка натяжных потолков, сборка мебели</h1>
+
+      <div class="main-info__wrapper block-wrapper">
+        <div class="main-info__left">
+          <div class="orange-blur"></div>
+
+          <h2 class="main-info__left-header">Профессиональные работы по обустройству вашего дома в Новокузнецке</h2>
+
+          <div class="main-info__left-subscription">
+            <div class="main-info__left-subscription-line"></div>
+            <span class="main-info__left-subscription-text">Вы узнаете цену до начала работ позвоните, и мы вам озвучим примерную стоимость!</span>
+          </div>
+        </div>
+
+        <div class="main-info__right">
+          <div>
+            <div class="main-info__right-picture-container">
+              <img src="img/main-info-masters.jpg" alt="Команда рабочиъ»">
+            </div>
+
+            <div class="main-info__right-additional-text">
+              Мы предоставляем услуги по установке пластиковых окон, натяжных потолков, шкафов-купе и остеклению балконов
+              Бесплатная консультация и выезд мастера
+              Быстрые сроки работ
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section-container" id="services">
+      <h2 class="visually-hidden">Услуги, предоставляемые команией onix</h2>
+
+      <h2 class="services__header">Услуги</h2>
+
+      <div class="services__container">
+        <ul class="services__list">
+          <li class="services__item">
+            <div class="services__item-picture">
+              <picture>
+                <source media="(min-width: 1000px)" srcset="img/service-window.jpg" width="460" height="280">
+                <img src="img/service-window.jpg" width="320" height="180" alt="Установка пластиковых окон">
+              </picture>
+            </div>
+            <h3 class="services__item-header">Установка пластиковых окон</h3>
+            <div class="services__item-description">
+              Выполним:
+              <ul class="services__item-description-list">
+                <li class="services__item-description-item">Бесплатный замер</li>
+                <li class="services__item-description-item">Изготовление</li>
+                <li class="services__item-description-item">Монтаж и демонтаж окон</li>
+                <li class="services__item-description-item">Замена вышедшего из строя стеклопакета или отдельных элементов фурнитуры</li>
+                <li class="services__item-description-item">Ремонт окон</li>
+                <li class="services__item-description-item">Замена откосов и подоконников</li>
+              </ul>
+            </div>
+
+            <a tabindex="0" href="#window-example" class="services__item-button">Подробнее -></a>
+          </li>
+
+          <li class="services__item">
+            <div class="services__item-picture">
+              <picture>
+                <source media="(min-width: 1000px)" srcset="img/service-balcony.jpg" width="460" height="280">
+                <img src="img/service-balcony.jpg" width="320" height="180" alt="Установка и ремонт балконов">
+              </picture>
+            </div>
+
+            <h3 class="services__item-header">Остекление балконов</h3>
+
+            <div class="services__item-description">
+              Выполним:
+              <ul class="services__item-description-list">
+                <li class="services__item-description-item">Комплексную отделку балконов и лоджий</li>
+                <li class="services__item-description-item">Ремонт балкона и лоджии</li>
+                <li class="services__item-description-item">Отделка балкона под ключ</li>
+                <li class="services__item-description-item">Остекление балкона</li>
+                <li class="services__item-description-item">Утепление балкона</li>
+                <li class="services__item-description-item">Расширение балкона</li>
+                <li class="services__item-description-item">Совмещение балкона</li>
+              </ul>
+            </div>
+
+            <a tabindex="0" href="#balcony-example" class="services__item-button">Подробнее -></a>
+          </li>
+
+          <li class="services__item">
+            <div class="services__item-picture">
+              <picture>
+                <source media="(min-width: 1000px)" srcset="img/service-ceiling.jpg" width="460" height="280">
+                <img src="img/service-ceiling.jpg" width="320" height="180" alt="Установка натяжных потолков">
+              </picture>
+            </div>
+
+            <h3 class="services__item-header">Натяжные потолки</h3>
+
+            <div class="services__item-description">
+              Выполним:
+              <ul class="services__item-description-list">
+                <li class="services__item-description-item">Бесплатный замер</li>
+                <li class="services__item-description-item">Монтаж и демонтаж потолков </li>
+                <li class="services__item-description-item">Чистая работа без пыли и грязи</li>
+                <li class="services__item-description-item">Консультация и введения объекта от обращения до полной установки потолка</li>
+              </ul>
+            </div>
+
+            <a tabindex="0" href="#ceiling-example" class="services__item-button">Подробнее -></a>
+          </li>
+
+          <li class="services__item">
+            <div class="services__item-picture">
+              <picture>
+                <source media="(min-width: 1000px)" srcset="img/service-closet.jpg" width="460" height="280">
+                <img src="img/service-closet.jpg" width="320" height="180" alt="Сборка мебели, шкафы-купе">
+              </picture>
+            </div>
+
+            <h3 class="services__item-header">Сборка мебели</h3>
+
+            <div class="services__item-description">
+              Выполним:
+              <ul class="services__item-description-list">
+                <li class="services__item-description-item">Сборка мебели по индивидуальным размерам</li>
+                <li class="services__item-description-item">Сборка кухонь</li>
+                <li class="services__item-description-item">Сборка встраиваемых шкафов</li>
+                <li class="services__item-description-item">Сборка шкафов - купе</li>
+              </ul>
+            </div>
+
+            <a tabindex="0" href="#closet-example" class="services__item-button">Подробнее -></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="work-examples section-container" id="work-examples">
+      <h2 class="visually-hidden">Примеры выполненных работ компании onix</h2>
+
+      <h2 class="work-examples__header">Примеры наших работ</h2>
+
+      <div class="work-examples__container">
+        <ul class="work-examples__list">
+          <li class="work-examples__item" id="window-example">
+            <h3 class="work-examples__item-header">Пластиковые окна</h3>
+
+            <div class="work-examples__image-container slider-container">
+              <div class="work-examples__image-slider slider">
+                <img class="window-image" src="img/window-example-1.jpg" alt="Пример установки окон">
+                <img class="window-image" src="img/window-example-2.jpg" alt="Пример установки окон">
+                <img class="window-image" src="img/window-example-3.jpg" alt="Пример установки окон">
+                <img class="window-image" src="img/window-example-4.jpg" alt="Пример установки окон">
+                <img class="window-image" src="img/window-example-5.jpg" alt="Пример установки окон">
+                <img class="window-image" src="img/window-example-6.jpg" alt="Пример установки окон">
+                <img class="window-image" src="img/window-example-7.jpg" alt="Пример установки окон">
+              </div>
+
+              <button id="window-prev-button" class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+              <button id="window-next-button" class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+            </div>
+          </li>
+
+          <li class="work-examples__item" id="balcony-example">
+            <h3 class="work-examples__item-header">Балконы</h3>
+
+            <div class="work-examples__image-container slider-container">
+              <div class="work-examples__image-slider slider">
+                <img class="balcony-image" src="img/balcony-example-1.jpg" alt="Пример 1 установки балконов">
+                <img class="balcony-image" src="img/balcony-example-2.jpg" alt="Пример 2 установки балконов">
+                <img class="balcony-image" src="img/balcony-example-3.jpg" alt="Пример 3 установки балконов">
+                <img class="balcony-image" src="img/balcony-example-4.jpg" alt="Пример 4 установки балконов">
+                <img class="balcony-image" src="img/balcony-example-5.jpg" alt="Пример 5 установки балконов">
+                <img class="balcony-image" src="img/balcony-example-7.jpg" alt="Пример 7 установки балконов">
+                <img class="balcony-image" src="img/balcony-example-6.jpg" alt="Пример 6 установки балконов">
+              </div>
+
+              <button id="balcony-prev-button" class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+              <button id="balcony-next-button" class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+            </div>
+          </li>
+
+          <li class="work-examples__item" id="ceiling-example">
+            <h3 class="work-examples__item-header">Натяжные потолки</h3>
+
+            <div class="work-examples__image-container slider-container">
+              <div class="work-examples__image-slider slider">
+                <img class="ceiling-image" src="img/ceiling-example-1.jpeg" alt="Пример 1 установки натяжных потолков">
+                <img class="ceiling-image" src="img/ceiling-example-2.jpeg" alt="Пример 2 установки натяжных потолков">
+                <img class="ceiling-image" src="img/ceiling-example-3.jpeg" alt="Пример 3 установки натяжных потолков">
+                <img class="ceiling-image" src="img/ceiling-example-4.jpeg" alt="Пример 4 установки натяжных потолков">
+                <img class="ceiling-image" src="img/ceiling-example-5.jpeg" alt="Пример 5 установки натяжных потолков">
+                <img class="ceiling-image" src="img/ceiling-example-6.jpeg" alt="Пример 6 установки натяжных потолков">
+                <img class="ceiling-image" src="img/ceiling-example-7.jpeg" alt="Пример 7 установки натяжных потолков">
+              </div>
+
+              <button id="ceiling-prev-button" class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+              <button id="ceiling-next-button" class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+            </div>
+          </li>
+
+          <li class="work-examples__item" id="closet-example">
+            <h3 class="work-examples__item-header">Сборка мебели</h3>
+
+            <div class="work-examples__image-container slider-container">
+              <div class="work-examples__image-slider slider">
+                <img class="closet-image" src="img/closet-example-1.jpg" alt="Пример 1 сборки мебели">
+                <img class="closet-image" src="img/closet-example-2.jpg" alt="Пример 2 сборки мебели">
+                <img class="closet-image" src="img/closet-example-3.jpg" alt="Пример 3 сборки мебели">
+                <img class="closet-image" src="img/closet-example-4.jpg" alt="Пример 4 сборки мебели">
+                <img class="closet-image" src="img/closet-example-5.jpg" alt="Пример 5 сборки мебели">
+                <img class="closet-image" src="img/closet-example-6.jpg" alt="Пример 6 сборки мебели">
+                <img class="closet-image" src="img/closet-example-7.jpg" alt="Пример 7 сборки мебели">
+              </div>
+
+              <button id="closet-prev-button" class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+              <button id="closet-next-button" class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about-company" id="about-company">
+      <h2 class="visually-hidden">Информация о компании Onix</h2>
+
+      <div class="about-company__container section-container">
+        <h2 class="about-company__header">О компании</h2>
+
+        <div class="about-company__picture"></div>
+
+        <div class="about-company__description">
+          Onix - это компания, которая уже более 10 лет занимается установкой пластиковых окон, остеклением балконов, установкой натяжных потолков и сбором мебели.
+          <br>
+          <br>
+          Наша команда состоит из настоящих профессионалов, которые знают свое дело. Мы стремимся предоставить нашим клиентам качественные услуги и надежные материалы. Благодаря нашему опыту и профессионализму, мы гарантируем высокое качество работы и довольных клиентов.
+        </div>
+
+        <p class="about-company__advantages">
+          <h3 class="about-company__advantages-header">Почему нас выбирают?</h3>
+
+          <ul class="about-company__advantages-list">
+            <li class="about-company__advantages-item">
+              <h4 class="about-company__advantages-item-header service-guaranty">Гарантия сервиса</h4>
+              <p class="about-company__advantages-item-description">Гарантия распространяется на все услуги, а не только и монтаж.</p>
+            </li>
+
+            <li class="about-company__advantages-item">
+              <h4 class="about-company__advantages-item-header best-price">Честная цена</h4>
+              <p class="about-company__advantages-item-description">Индивидуальные скидки пенсионерам, госслужащим, инвалидам и новоселам Предложим цену на порядок ниже!</p>
+            </li>
+
+            <li class="about-company__advantages-item">
+              <h4 class="about-company__advantages-item-header short-date">Кратчайшие сроки</h4>
+              <p class="about-company__advantages-item-description">Выполним любые работы быстро и в срок!</p>
+            </li>
+
+            <li class="about-company__advantages-item">
+              <h4 class="about-company__advantages-item-header save-materials">Безопасные материалы</h4>
+              <p class="about-company__advantages-item-description">Конструкции производятся в соответствии с требованиями закона.</p>
+            </li>
+          </ul>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer" id="footer">
+    <div class="page-footer__container section-container">
+      <div class="page-footer__top-container">
+        <a class="page-footer__logo">
+          <img src="img/logo-white.svg" alt="Логотип Onix»">
+        </a>
+
+        <a class="page-footer__phone" href="tel:+79236317704">+7 (923) 631 77-04</a>
+        <a class="page-footer__phone" href="tel:+79236104482">+7 (923) 610 44-82</a>
+
+        <div class="page-footer__social-list">
+          <a href="https://t.me/Oniix42" target="_blank" class="page-footer__social-item telegram"></a>
+          <a href="https://wa.me/79236317704" target="_blank" class="page-footer__social-item whatsapp"></a>
+          <a href="https://viber.click/79236317704" target="_blank" class="page-footer__social-item viber"></a>
+        </div>
+
+        <a class="page-footer__location">Новокузнецк</a>
+      </div>
+
+      <div class="page-footer__bottom-container">
+        <span class="page-footer__copyright">
+          © Copyright 2023,все права защищены
+        </span>
+      </div>
     </div>
-  </form>
-</section>
+  </footer>
 
-<section class="good visually-hidden">
-  <button class="good__close"></button>
-  <p class="good__header">
-    Форма успешно отправлена, спасибо!:)
-  </p>
-</section>
-
-<script src="js/script.min.js"></script>
+  <script src="js/script.min.js"></script>
 
 </body>
 </html>
