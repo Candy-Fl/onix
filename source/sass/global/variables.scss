@@ -1,0 +1,25 @@
+// colors
+
+:root {
+  --main-orange: #FE7865;
+  --hover-orange: #F17D4B;
+  --basic-black: #141517;
+  --light-black: #2C2E3F;
+  --background-black: #1D1E25;
+  --light-black-border: rgba(44, 46, 63, 0.3);
+  --text-black : #48494D;
+  --hover-black: rgba(20, 21, 23);
+  --text-gray: rgba(44, 46, 63, 0.7);
+  --background-gray: #FBF8F8;
+  --basic-white : #FFFFFF;
+  --default-black : #000000;
+  --shadow-black: rgba(41, 54, 66, 0.1);
+  --light-gray: rgba(20, 21, 23, 0.5);
+  --footer-border: #D7D9DF;
+}
+
+
+// Viewports
+$tablet-width: 768px;
+$desktop-width: 1000px;
+$mobile-width: 767px;

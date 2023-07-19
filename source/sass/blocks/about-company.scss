@@ -1,0 +1,154 @@
+.about-company {
+  background-color: var(--background-black);
+  color: var(--basic-white);
+
+  padding: 100px 0;
+
+  @media(min-width: $desktop-width) {
+    padding: 200px 0;
+  }
+
+  &__header {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -2px;
+
+    @media(min-width: $desktop-width) {
+      font-size: 56px;
+    }
+  }
+
+  &__picture {
+    background-image: url('/img/about-company-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+
+    @media(min-width: $desktop-width) {
+      background-size: auto;
+      background-position-y: -300px;
+      height: 338px;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__description {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+
+    @media(min-width: $desktop-width) {
+      font-size: 16px;
+    }
+  }
+
+  &__advantages {
+    margin-top: 40px;
+
+    @media(min-width: $desktop-width) {
+      margin-top: 80px;
+    }
+
+    &-header {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 42px; /* 131.25% */
+      letter-spacing: -1px;
+
+      @media(min-width: $desktop-width) {
+        font-size: 32px;
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14%;
+      row-gap: 40px;
+      justify-content: center;
+
+      @media(min-width: $desktop-width) {
+        row-gap: 20px;
+      }
+    }
+
+    &-item {
+      width: 80%;
+      border: 1px solid var(--basic-white);
+      padding: 15px;
+
+      @media(min-width: $desktop-width) {
+        width: 40%;
+      }
+
+      &-header {
+        font-size: 16px;
+        position: relative;
+        margin-left: 30px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 22px;
+          height: 22px;
+          left: -30px;
+          background-size: cover;
+          top: 2px;
+        }
+
+        @media(min-width: $desktop-width) {
+          font-size: 24px;
+          margin-left: 40px;
+
+          &::before {
+            width: 28px;
+            height: 28px;
+            top: unset;
+            left: -40px;
+          }
+        }
+      }
+
+      .service-guaranty {
+        &::before {
+          background-image: url("/img/icon-service-garanty.svg");
+        }
+      }
+
+      .best-price {
+        &::before {
+          background-image: url("/img/icon-best-price.svg");
+        }
+      }
+
+      .short-date {
+        &::before {
+          background-image: url("/img/icon-short-date.svg");
+        }
+      }
+
+      .save-materials {
+        &::before {
+          background-image: url("/img/icon-save-materials.svg");
+        }
+      }
+
+      &-description {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+
+        @media(min-width: $desktop-width) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

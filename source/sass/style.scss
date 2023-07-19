@@ -1,0 +1,19 @@
+// global
+
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/normalize";
+@import "global/variables.scss";
+
+// blocks
+
+@import "blocks/page.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/main-info.scss";
+@import "blocks/services.scss";
+@import "blocks/work-examples.scss";
+@import "blocks/about-company.scss";
+@import "blocks/page-footer.scss";
+
+@import "blocks/site-list.scss";
+@import "blocks/modal.scss";

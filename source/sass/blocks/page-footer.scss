@@ -1,0 +1,95 @@
+.page-footer {
+  border-top: 1px solid var(--basic-white);
+  padding-top: 100px;
+  background-color: var(--background-black);
+  color: var(--basic-white);
+  padding-bottom: 58px;
+
+  &__top-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    width: fit-content;
+    margin: 0 auto 20px;
+  }
+
+  &__logo {
+    color: white;
+  }
+
+  &__phone {
+    margin-left: 32px;
+    position: relative;
+    color: inherit;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      background-image: url('/img/icon-tel.svg');
+      background-repeat: no-repeat;
+      left: -32px;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    column-gap: 8px;
+    justify-content: center;
+  }
+
+  &__social-item {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+  }
+
+  .whatsapp {
+    background-image: url('/img/icon-whatsapp.svg');
+  }
+
+  .viber {
+    background-image: url('/img/icon-viber.svg');
+  }
+
+  .telegram {
+    background-image: url('/img/icon-tg.svg');
+  }
+
+  &__location {
+    position: relative;
+    text-align: center;
+    //margin-left: 16px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 30px;
+      left: 10px;
+      background-image: url('/img/icon-location.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__bottom-container {
+    border-top: 1px solid var(--basic-white);
+    padding-top: 20px;
+  }
+
+  &__copyright {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+  }
+}

@@ -1,0 +1,76 @@
+.site-list {
+  list-style: none;
+
+  @media (min-width:$desktop-width) {
+    right: 0;
+    display: flex;
+    column-gap: 24px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+
+.site-list a{
+  display: block;
+  text-align: left;
+  color: var(--text-black);
+  font-weight: 600;
+  font-size: 20px;
+  padding: 16px 17px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--shadow-black);
+
+  @media (min-width: $desktop-width) {
+    margin:0;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 500;
+    padding: 0;
+    background-color: inherit;
+    border-bottom: none;
+  }
+}
+
+.site-list__item {
+  margin-bottom: 30px;
+
+  &:hover a{
+    color: var(--main-orange);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin: 0 0 0 40px;
+    position: relative;
+  }
+
+}
+
+.site-list__phone {
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url(/img/icon-tel-black.svg);
+    background-repeat: no-repeat;
+    left: -32px;
+    top: 4px;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      color: var(--main-orange);
+    }
+  }
+}

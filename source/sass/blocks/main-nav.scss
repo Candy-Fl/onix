@@ -1,0 +1,133 @@
+.main-nav {
+  min-height: 50px;
+
+  @media (min-width: $desktop-width) {
+    padding: 26px 0 16px 0;
+    min-height: 42px;
+  }
+}
+
+.main-nav__logo {
+  width: 44px;
+  height: 17px;
+  left: 16px;
+  top: 18px;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    left: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 147px;
+    height: 42px;
+    left: 0;
+    top: 0;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  z-index: 3;
+  border: none;
+  background-color: var(--main-orange);
+
+  &::before {
+    content: "";
+    background-image: url('/img/toggle-cross.svg');
+    background-repeat: no-repeat;
+    background-color: inherit;
+    position: absolute;
+    top:12px;
+    right: 15px;
+    z-index: 2;
+    display: block;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    border: none;
+  }
+
+  @media(min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav--closed {
+
+  .main-nav__toggle {
+    background-color: var(--main-orange);
+
+    &::before {
+      content: "";
+      width: 23px;
+      height: 1px;
+      background-color: var(--basic-white);
+      position: absolute;
+      top: 15px;
+      right: 14px;
+      box-shadow: 0 8px 0 0 var(--basic-white), 0 16px 0 0 var(--basic-white);
+    }
+  }
+
+  .main-nav__list {
+    @media(max-width: $desktop-width - 1) {
+      display: none;
+    }
+  }
+
+  @media (min-width:$tablet-width) {
+    .main-nav__toggle {
+      width: 72px;
+
+      &::before {
+        right: 27px;
+      }
+    }
+  }
+
+}
+
+.main-nav--opened {
+  @media (max-width: $desktop-width - 1) {
+    .main-nav__toggle {
+      background-color: inherit;
+    }
+
+    .main-nav__list {
+      width: 100%;
+      padding-bottom: 284px;
+    }
+
+    @media (min-width:$tablet-width) {
+      .main-nav__toggle {
+        width: 72px;
+
+        &::before {
+          right: 27px;
+        }
+      }
+    }
+  }
+}
+
+.main-nav__wrapper {
+  @media (min-width:$desktop-width) {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
